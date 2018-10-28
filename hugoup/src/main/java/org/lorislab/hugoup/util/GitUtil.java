@@ -1,4 +1,4 @@
-package org.lorislab.util;
+package org.lorislab.hugoup.util;
 
 import java.io.File;
 import org.eclipse.jgit.api.Git;

@@ -1,8 +1,8 @@
-package org.lorislab;
+package org.lorislab.hugoup;
 
-import org.lorislab.util.YamlUtil;
-import org.lorislab.model.Config;
-import org.lorislab.util.GitUtil;
+import org.lorislab.hugoup.util.YamlUtil;
+import org.lorislab.hugoup.model.Config;
+import org.lorislab.hugoup.util.GitUtil;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;

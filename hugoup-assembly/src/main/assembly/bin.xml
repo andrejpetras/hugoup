@@ -12,7 +12,7 @@
             <outputDirectory>/</outputDirectory>
             <lineEnding>unix</lineEnding>
             <includes>
-                <include>corn</include>
+                <include>hugoup</include>
             </includes>
             <fileMode>0755</fileMode>
         </fileSet>
@@ -29,7 +29,7 @@
             <outputDirectory>/</outputDirectory>
             <lineEnding>unix</lineEnding>
             <excludes>
-                <exclude>corn</exclude>
+                <exclude>hugoup</exclude>
                 <exclude>*.bat</exclude>
             </excludes>
         </fileSet>

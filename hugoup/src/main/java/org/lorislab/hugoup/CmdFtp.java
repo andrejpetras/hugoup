@@ -1,6 +1,6 @@
-package org.lorislab;
+package org.lorislab.hugoup;
 
-import org.lorislab.model.Config;
+import org.lorislab.hugoup.model.Config;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
