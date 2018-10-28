@@ -7,9 +7,9 @@
     <packaging>pom</packaging>
 
     <scm>
-        <connection>scm:git:https://github.com/andrejpetras/hugoup.git</connection>
-        <developerConnection>scm:git:git@github.com:andrejpetras/hugoup.git</developerConnection>
-        <url>https://github.com/andrejpetras/hugoup</url>
+        <connection>scm:git:https://github.com/lorislab/hugoup.git</connection>
+        <developerConnection>scm:git:git@github.com:lorislab/hugoup.git</developerConnection>
+        <url>https://github.com/lorislab/hugoup</url>
         <tag>HEAD</tag>
     </scm>
 		
