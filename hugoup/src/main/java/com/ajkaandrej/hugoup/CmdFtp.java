@@ -2,10 +2,12 @@ package com.ajkaandrej.hugoup;
 
 import com.ajkaandrej.hugoup.model.Config;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.logging.Logger;
+import org.apache.commons.net.ftp.FTP;
 
 import org.apache.commons.net.ftp.FTPClient;
 
@@ -37,7 +39,9 @@ public class CmdFtp {
         System.out.println("Start to download file " + source + " to " + target);
         try (FtpClient ftp = new FtpClient(config)) {
             ftp.connect();
-            Files.copy(ftp.getClient().retrieveFileStream(source), Paths.get(target), StandardCopyOption.REPLACE_EXISTING);
+            try (InputStream in = ftp.getClient().retrieveFileStream(source)) {
+                Files.copy(in, Paths.get(target), StandardCopyOption.REPLACE_EXISTING);
+            }
             ftp.getClient().logout();
         }
         System.out.println("The file " + target + " has been downloaded.");
@@ -55,11 +59,14 @@ public class CmdFtp {
             // This will cause the file upload/download methods to send a NOOP approximately every 5 minutes.
             client.setControlKeepAliveTimeout(300);
             
+            client.setBufferSize(0);
+            
             this.config = config;
         }
 
         public void connect() throws Exception {
             client.connect(config.getHost(), config.getPort());
+            client.setFileType(FTP.BINARY_FILE_TYPE);
             client.login(config.getUser(), config.getPassword());
             client.changeWorkingDirectory(config.getPath());
         }
