@@ -1,8 +1,8 @@
-package com.ajkaandrej.hugoup;
+package org.lorislab;
 
-import com.ajkaandrej.hugoup.model.Config;
-import com.ajkaandrej.hugoup.model.DiffResult;
-import com.ajkaandrej.hugoup.util.YamlUtil;
+import org.lorislab.model.Config;
+import org.lorislab.model.DiffResult;
+import org.lorislab.util.YamlUtil;
 import java.io.FileInputStream;
 
 public class CmdUpload {

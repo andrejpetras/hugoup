@@ -23,4 +23,4 @@ goto setup
 
 IF NOT DEFINED JAVA_OPTS set JAVA_OPTS=
 
-java -cp "%CP%" %JAVA_OPTS% com.ajkaandrej.hugoup.Main %CMD_LINE_ARGS%
+java -cp "%CP%" %JAVA_OPTS% org.lorislab.hugoup.Main %CMD_LINE_ARGS%

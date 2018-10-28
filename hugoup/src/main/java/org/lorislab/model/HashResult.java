@@ -1,4 +1,4 @@
-package com.ajkaandrej.hugoup.model;
+package org.lorislab.model;
 
 import java.util.HashMap;
 import java.util.Map;

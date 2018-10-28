@@ -1,8 +1,8 @@
-package com.ajkaandrej.hugoup;
+package org.lorislab;
 
-import com.ajkaandrej.hugoup.model.DiffResult;
-import com.ajkaandrej.hugoup.model.HashResult;
-import com.ajkaandrej.hugoup.util.YamlUtil;
+import org.lorislab.model.DiffResult;
+import org.lorislab.model.HashResult;
+import org.lorislab.util.YamlUtil;
 import java.util.Map;
 import java.util.Map.Entry;
 

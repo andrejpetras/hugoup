@@ -1,8 +1,8 @@
-package com.ajkaandrej.hugoup;
+package org.lorislab;
 
-import com.ajkaandrej.hugoup.util.YamlUtil;
-import com.ajkaandrej.hugoup.model.HashResult;
-import com.ajkaandrej.hugoup.util.GitUtil;
+import org.lorislab.util.YamlUtil;
+import org.lorislab.model.HashResult;
+import org.lorislab.util.GitUtil;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;

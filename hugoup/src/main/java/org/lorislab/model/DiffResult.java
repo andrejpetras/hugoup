@@ -1,4 +1,4 @@
-package com.ajkaandrej.hugoup.model;
+package org.lorislab.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -37,7 +37,7 @@
     <dependencySets>
         <dependencySet>
             <includes>
-                <include>com.ajkaandrej.hugoup:hugoup</include>
+                <include>org.lorislab.hugoup:hugoup</include>
             </includes>
             <outputDirectory>/</outputDirectory>
             <fileMode>0644</fileMode>
@@ -48,7 +48,7 @@
             <unpack>false</unpack>
             <scope>runtime</scope>
             <excludes>
-                <exclude>com.ajkaandrej.hugoup:hugoup</exclude>
+                <exclude>org.lorislab.hugoup:hugoup</exclude>
             </excludes>
         </dependencySet>
     </dependencySets>

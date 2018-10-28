@@ -1,4 +1,4 @@
-package com.ajkaandrej.hugoup.util;
+package org.lorislab.util;
 
 import com.esotericsoftware.yamlbeans.YamlConfig;
 import com.esotericsoftware.yamlbeans.YamlReader;
