@@ -28,8 +28,11 @@ public class CmdFtp {
             ftp.connect();
             ftp.getClient().changeWorkingDirectory(path);
             System.out.println(ftp.getClient().printWorkingDirectory());
-            for (String f : ftp.getClient().listNames()) {
-                System.out.println("  - " + f);
+            String[] tmp = ftp.getClient().listNames();
+            if (tmp != null) {
+                for (String f : tmp) {
+                    System.out.println("  - " + f);
+                }
             }
             ftp.getClient().logout();
         }
@@ -64,8 +67,9 @@ public class CmdFtp {
             this.config = config;
         }
 
-        public void connect() throws Exception {
+        public void connect() throws Exception {           
             client.connect(config.getHost(), config.getPort());
+            client.enterLocalPassiveMode();
             client.setFileType(FTP.BINARY_FILE_TYPE);
             client.login(config.getUser(), config.getPassword());
             client.changeWorkingDirectory(config.getPath());
